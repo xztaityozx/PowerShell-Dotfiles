@@ -8,8 +8,9 @@ Set-PowerLinePrompt -Colors "#424242" -PowerLineFont -RestoreVirtualTerminal
     { New-PromptText { " " + $MyInvocation.HistoryId + " " } -Fg "#D84315" -Bg "#212121" }
     { New-PromptText { if($pushd=(Get-Location -Stack).Count) {" &raquo;$pushd "} } -BackgroundColor "#311B92" }
     { Get-PowerLinePath } 
+    {  New-PromptText { " " } -ForegroundColor "#388E3C" -BackgroundColor "#388E3C" -ErrorForegroundColor White -ErrorBackgroundColor "#b71c1c" } 
     { "`n" }
-    { New-PromptText {" xztaityozx "}  -Bg "#4527A0" -EBg Red -Fg White } 
+    { New-PromptText {" xztaityozx "}  -Bg "#4527A0"  -Fg White } 
     { New-PromptText { " % " } -Bg "#212121" -Fg White }
     { " " }
 )
